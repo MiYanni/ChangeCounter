@@ -51,6 +51,12 @@
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\NumericExtensionscs.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="ObjectOriented\Object2.cs" />
+    <Compile Include="ObjectOriented\Oop2\Unit.cs" />
+    <Compile Include="ObjectOriented\Oop2\Dime.cs" />
+    <Compile Include="ObjectOriented\Oop2\Nickel.cs" />
+    <Compile Include="ObjectOriented\Oop2\Penny.cs" />
+    <Compile Include="ObjectOriented\Oop2\Quarter.cs" />
     <Compile Include="ObjectOriented\Oop1\Currency.cs" />
     <Compile Include="ObjectOriented\Oop1\Penny.cs" />
     <Compile Include="ObjectOriented\Oop1\Nickel.cs" />

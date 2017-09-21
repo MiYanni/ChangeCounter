@@ -9,7 +9,7 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            Object1.Solution(67);
+            Object2.Solution(67);
 
             Console.ReadKey();
         }
