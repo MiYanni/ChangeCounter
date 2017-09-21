@@ -1,4 +1,5 @@
 ﻿using System;
+using ChangeCounter.ObjectOriented;
 using ChangeCounter.SingleStatement;
 using ChangeCounter.Traditional;
 
@@ -8,7 +9,7 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            Single3.Solution(67);
+            Object1.Solution(67);
 
             Console.ReadKey();
         }
