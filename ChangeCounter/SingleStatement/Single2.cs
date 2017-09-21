@@ -1,16 +1,24 @@
-﻿namespace ChangeCounter.SingleStatement
+﻿using System;
+using System.Linq;
+
+namespace ChangeCounter.SingleStatement
 {
     internal static class Single2
     {
-        public static void Solution()
+        public enum CurrencyUnits
         {
-            //Enumerable.Range(1, 100)
-            //    .Select(v => new { Value = v, Name = String.Empty })
-            //    .Replace(vn => vn.Value.IsDivisibleBy(3), vn => new { vn.Value, Name = String.Join(String.Empty, vn.Name, "Fizz") })
-            //    .Replace(vn => vn.Value.IsDivisibleBy(5), vn => new { vn.Value, Name = String.Join(String.Empty, vn.Name, "Buzz") })
-            //    .Replace(vn => String.IsNullOrEmpty(vn.Name), vn => new { vn.Value, Name = vn.Value.ToString(CultureInfo.InvariantCulture) })
-            //    .Select(vn => vn.Name)
-            //    .ToList().ForEach(Console.WriteLine);
+            Penny = 1,
+            Nickel = 5,
+            Dime = 10,
+            Quarter = 25
+        }
+
+        public static void Solution(int amount)
+        {
+            Enum.GetValues(typeof(CurrencyUnits)).Cast<CurrencyUnits>().OrderByDescending(u => u)
+                .Select(unit => (Count: Math.DivRem(amount, (int)unit, out amount), Name: unit.ToString()))
+                .Where(x => x.Count > 0)
+                .ToList().ForEach(x => Console.WriteLine($"{x.Count} {x.Name}"));
         }
     }
 }

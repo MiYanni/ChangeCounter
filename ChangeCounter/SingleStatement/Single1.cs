@@ -7,7 +7,8 @@ namespace ChangeCounter.SingleStatement
     {
         public static void Solution(int amount)
         {
-            new (int Worth, string Name)[]
+            //https://stackoverflow.com/a/18005821/294804
+            new(int Worth, string Name)[]
             {
                 (25, "Quarter"),
                 (10, "Dime"),
