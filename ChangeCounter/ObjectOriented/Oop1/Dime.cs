@@ -2,10 +2,8 @@
 {
     internal class Dime : Currency
     {
-        static Dime()
+        public Dime() : base(10, nameof(Dime))
         {
-            Worth = 10;
-            Name = nameof(Dime);
         }
     }
 }

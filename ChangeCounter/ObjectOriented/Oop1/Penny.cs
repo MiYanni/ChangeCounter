@@ -2,10 +2,8 @@
 {
     internal class Penny : Currency
     {
-        static Penny()
+        public Penny() : base(1, nameof(Penny))
         {
-            Worth = 1;
-            Name = nameof(Penny);
         }
     }
 }

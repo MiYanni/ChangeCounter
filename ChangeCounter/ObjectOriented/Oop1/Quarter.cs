@@ -2,10 +2,8 @@
 {
     internal class Quarter : Currency
     {
-        static Quarter()
+        public Quarter() : base(25, nameof(Quarter))
         {
-            Worth = 25;
-            Name = nameof(Quarter);
         }
     }
 }

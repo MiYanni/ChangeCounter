@@ -2,10 +2,8 @@
 {
     internal class Nickel : Currency
     {
-        static Nickel()
+        public Nickel() : base(5, nameof(Nickel))
         {
-            Worth = 5;
-            Name = nameof(Nickel);
         }
     }
 }
