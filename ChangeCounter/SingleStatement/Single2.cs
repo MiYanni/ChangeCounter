@@ -5,14 +5,6 @@ namespace ChangeCounter.SingleStatement
 {
     internal static class Single2
     {
-        public enum CurrencyUnits
-        {
-            Penny = 1,
-            Nickel = 5,
-            Dime = 10,
-            Quarter = 25
-        }
-
         public static void Solution(int amount)
         {
             Enum.GetValues(typeof(CurrencyUnits)).Cast<CurrencyUnits>().OrderByDescending(u => u)

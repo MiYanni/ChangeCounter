@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyUnits.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\NumericExtensionscs.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleStatement\Single2.cs" />
     <Compile Include="SingleStatement\Single1.cs" />
+    <Compile Include="Traditional\Normal1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

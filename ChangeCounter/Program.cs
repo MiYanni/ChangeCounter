@@ -1,5 +1,6 @@
 ﻿using System;
 using ChangeCounter.SingleStatement;
+using ChangeCounter.Traditional;
 
 namespace ChangeCounter
 {
@@ -7,7 +8,7 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            Single2.Solution(67);
+            Normal1.Solution(67);
 
             Console.ReadKey();
         }
