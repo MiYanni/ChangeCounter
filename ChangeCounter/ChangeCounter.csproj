@@ -53,6 +53,7 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleStatement\Single3.cs" />
     <Compile Include="SingleStatement\Single2.cs" />
     <Compile Include="SingleStatement\Single1.cs" />
     <Compile Include="Traditional\Normal1.cs" />
