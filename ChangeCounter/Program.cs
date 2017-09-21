@@ -9,7 +9,8 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            Object2.Solution(67);
+            SingleCoin2.Solution(67);
+            //SingleCoin2.Solution(55);
 
             Console.ReadKey();
         }
