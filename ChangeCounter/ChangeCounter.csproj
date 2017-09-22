@@ -72,6 +72,7 @@
     <Compile Include="SingleStatement\Single3.cs" />
     <Compile Include="SingleStatement\Single2.cs" />
     <Compile Include="SingleStatement\Single1.cs" />
+    <Compile Include="Traditional\Normal2.cs" />
     <Compile Include="Traditional\Normal1.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,6 @@ namespace ChangeCounter.SingleStatement
 {
     internal static class Single5
     {
-        // This prints the coins instead of counts of them.
         public static void Solution(int amount)
         {
             new[] { Quarter, Dime, Nickel, Penny }

@@ -9,8 +9,8 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            //Single5.Solution(67);
-            Single5.Solution(55);
+            Normal2.Solution(67);
+            //Normal2.Solution(55);
 
             Console.ReadKey();
         }
