@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using static ChangeCounter.CurrencyUnits;
-using static System.Math;
 using static System.Console;
 
 namespace ChangeCounter.Traditional
@@ -30,21 +28,6 @@ namespace ChangeCounter.Traditional
                 yield return (previous, null);
             }
         }
-
-        //private static IEnumerable<int> Formula(IEnumerable<(int? Previous, int? Current)> unitSets, int amount)
-        //{
-        //    using (var iterator = unitSets.GetEnumerator())
-        //    {
-        //        while (iterator.MoveNext())
-        //        {
-        //            var previous = iterator.Current.Previous;
-        //            var current = iterator.Current.Current;
-
-        //            amount = amount % previous ?? amount;
-        //            yield return amount / current ?? amount;
-        //        }
-        //    }
-        //}
 
         private static IEnumerable<int> Formula(this IEnumerable<(int? Previous, int? Current)> unitSets, int amount) => 
             unitSets.Select(u =>

@@ -9,8 +9,8 @@ namespace ChangeCounter
     {
         private static void Main(string[] args)
         {
-            Functional1.Solution(67);
-            //Normal2.Solution(55);
+            //Functional1.Solution(67);
+            Functional1.Solution(55);
 
             Console.ReadKey();
         }
